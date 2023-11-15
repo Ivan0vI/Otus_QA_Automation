@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class Figure(ABC)
+class Figure(ABC):
     def __init__(self, name):
         self.name = name
 
@@ -12,7 +12,6 @@ class Figure(ABC)
     @abstractmethod
     def  get_perimetr(self):
         pass
-
 
     def add_area(self, other_figure):
         if not isinstance(Figure, other_figure):
